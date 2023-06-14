@@ -17,19 +17,23 @@ message( "------------")
 message( "" )
 
 if ( EXISTS ${file_curr} ) 
-	message( "1: Using EXISTS: File exists: ${file_curr}")
+  message( "1: Using EXISTS: File exists: ${file_curr}")
 endif()
 
 if ( EXISTS ${file_prev} )
-	message( "2: Using EXISTS: File exists: ${file_prev}")
+  message( "2: Using EXISTS: File exists: ${file_prev}")
+endif()
+
+if ( NOT EXISTS "Babbage" )
+  message("3: File Babbage does not exist.")
 endif()
 
 set(next_file )
 if( ${file_curr} IS_NEWER_THAN ${file_prev})
-  message( "3: This file is newer than ${file_prev}" )
+  message( "4: This file is newer than ${file_prev}" )
 endif()
 
 if(IS_DIRECTORY "../01-learning" )
-  message( "4: Found parent directory: 01-learning")
+  message( "5: Found parent directory: 01-learning")
 endif()
 
