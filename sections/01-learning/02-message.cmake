@@ -15,7 +15,9 @@ message([=[
 
 # Messages can have a mode, e.g. STATUS, WARNING, NOTICE, FATAL_ERROR
 
-message( STATUS "7. Just a status line" )
+message( STATUS "7. A status line" )
+message( "" )
 message( WARNING "8. A warning line" )
 message( NOTICE "9. A notice line" )
+message( "" )
 message( FATAL_ERROR "10. This will do a stop!" )
