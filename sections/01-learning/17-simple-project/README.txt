@@ -1,8 +1,13 @@
 README.txt
 
-This shows just a simple project with a single main.cpp
+This is almost the same as our 'Hello' example.
+
+This project has a single main.cpp
 You can create the builds files by typing: ./generate.sh
-Then go to the build directory, and type: make
+Build by typing: cmake --build build
 
-This should create the executable 'simple'.
+This will create the executable 'simple'.
 
+It is possible to run 'make' directly, but the recommended way is
+to use cmake. The reason being, it's not a 'generator independent' way
+of building.
