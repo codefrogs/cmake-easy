@@ -1,6 +1,7 @@
 #!/bin/cmake -P
 # Cmake-easy by Codefrogs
 #
+cmake_minimum_required( VERSION 3.25)
 message( "Cmake-easy by Codefrogs")
 message( "Passing parameters, and returning values." )
 
@@ -78,3 +79,19 @@ get_mp3_filenames(f1 f2)
 message( "7: Filename: ${f1}" )
 message( "8: Filename: ${f2}" )
 
+# ---------------------------------
+# Using PROPAGATE
+# This is perhaps the easier way of passing
+# back values from a function by using 'return'.
+#
+function( get_planet_info name dist size )
+  if(${name} STREQUAL "mars")
+    set(${dist} 228)
+    set(${size} 3390)
+  endif()
+  return( PROPAGATE ${dist} ${size} )
+endfunction()
+
+get_planet_info(mars dist_km radius_km)
+message( "9: Distance of mars from sun[km]: ${dist_km}")
+message( "10: Radius of mars[km]: ${radius_km}")
