@@ -1,4 +1,6 @@
 #!/bin/cmake -P
+cmake_minimum_required(VERSION 3.26)
+
 # See: https://cmake.org/cmake/help/latest/command/message.html
 
 message("0. Hello")
