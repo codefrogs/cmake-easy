@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.29)
 message("This script returns an exit code of 1")
 message("Check the failure code yourself!")
 
