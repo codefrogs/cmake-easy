@@ -1,10 +1,13 @@
 #!/bin/cmake -P
 # Cmake-easy by Codefrogs
-message( "Cmake-easy by Codefrogs")
-message( "Array/List examples" )
-message( "Note you probably won't use arrays/lists in Cmake!" )
+
+# When building projects, you probably won't 
+# make much use of lists.
 
 # see: https://cmake.org/cmake/help/v3.22/command/list.html
+
+message( "Cmake-easy by Codefrogs")
+message( "Array/List examples" )
 
 # An array that holds a list of items.
 # Notice: No commas here!
