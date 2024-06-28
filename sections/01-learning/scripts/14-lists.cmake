@@ -18,10 +18,10 @@ message(${users}) # Listing again, but it's call joined up!
 message("3." ${users} )  # Still joined up
 message("4." "${users}" ) # Back to looking like a list!
 
-# This shows that you need quotes around a list to get it shown
+# The above shows that you need quotes around a list to get it shown
 # properly.
 
-# Using lists
+# Some list basics.
 list(LENGTH users num)  # List length
 list(GET users 0 first) # Get the first user
 list(FIND users Dave index) # Get the index of time with 'Dave'
