@@ -103,6 +103,7 @@ message( "display( \${items})" )
 display("${items}")
 
 # Listing items in an array
+message("")
 set(planets Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune )
 foreach( planet IN LISTS planets )
 	message( "Planet: ${planet}" )
