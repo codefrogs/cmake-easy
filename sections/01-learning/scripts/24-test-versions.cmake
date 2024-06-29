@@ -5,6 +5,13 @@
 #
 # See: https://cmake.org/cmake/help/latest/command/if.html#version-comparisons
 
+# Version comparisons:
+# -VERSION_EQUAL
+# -VERSION_LESS
+# -VERSION_LESS_EQUAL
+# -VERSION_GREATER
+# -VERSION_GREATER_EQUAL
+
 message("cmake-easy by Codefrogs")
 message("Version number comparisions")
 
