@@ -5,6 +5,7 @@
 # make much use of lists.
 
 # see: https://cmake.org/cmake/help/v3.22/command/list.html
+cmake_minimum_required(VERSION 3.3)
 
 message( "Cmake-easy by Codefrogs")
 message( "Array/List examples" )
@@ -89,6 +90,12 @@ set(atomic_val "Lithium;Uranium;Gold;Magnesium;Iron")
 foreach(pair IN ZIP_LISTS atomic_key atomic_val)
   message( ${pair_0} -> ${pair_1} )
 endforeach()   
+message( "" )
+
+message( "---Test value is in a list---" )
+if ("Gold" IN_LIST atomic_val)
+  message("Stuck gold!")
+endif()
 message( "" )
 
 #-------------------------------
