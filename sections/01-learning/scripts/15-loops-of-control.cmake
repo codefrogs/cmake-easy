@@ -15,7 +15,7 @@ message( "Control flow")
 message( "------------")
 message( "" )
 
-message( "RANGE 1-10 example: " )
+message( "foreach (<var> RANGE <val>) example: " )
 foreach (i RANGE 10)
   message( "${i} " )
 endforeach()
@@ -23,21 +23,21 @@ endforeach()
 message("")
 
 # A more complicated RANGE example
-message( "RANGE 2-9 example: " )
+message( "foreach( <var> RANGE <min> <max> example: " )
 foreach (i RANGE 2 9)
   message("${i} ")
 endforeach()
 message("")
 
 # Using a list
-message( "Loop over items in a list: ")
+message( "foreach( <var> ITEMS <space separted items> example: ")
 foreach( name ITEMS Centaurs Cerberus Charybdis Griffins)
   message( "${name} ")
 endforeach()
 message("")
 
 # Using continue
-message( "Odd vals - Using continue(): ")
+message( "foreach( <var> RANGE <val>)  + continue() example: ")
 foreach( i RANGE 10 )
   math( EXPR val "${i}%2" ) # Looks complicated but returns 0 for even numbers.
   if (${val} EQUAL 0)
@@ -48,18 +48,17 @@ endforeach()
 message("")
 
 #Using break
-message( "Numbers 1-5 - Using break: ")
+message( "foreach( <var> RANGE <val>) + break example: ")
 set(num 5)
 foreach( i RANGE 100)
+  message( "${i} ")
   if (${i} EQUAL ${num} )
-    message( "${i}\n" )
     break()
   endif()
-  message( "${i}, ")
 endforeach()
 
 #Using while
-message( "Using while: ")
+message( "while( <var> STREQUAL <val>) example: ")
 set(seq_cnt 0)
 set(found "N")
 while (${found} STREQUAL "N" )
@@ -74,10 +73,10 @@ endwhile()
 message("")
 
 # Ziplists
-# New in version 3.17 of cmake.
-
+message("foreach( <var> IN ZIP_LISTS <list> <list>) examples")
 set( french "le congélateur;les meulbles;août;soulagé;sève" )
 set( english "freezer;furniture;August;relieved;sap" )
+
 foreach( tr IN ZIP_LISTS french english )
   message( STATUS ${tr_0}->${tr_1} )
 endforeach()
