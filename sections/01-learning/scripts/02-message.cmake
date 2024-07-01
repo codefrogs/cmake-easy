@@ -1,7 +1,12 @@
 #!/bin/cmake -P
-cmake_minimum_required(VERSION 3.26)
+
+# Shows how to use message()
+# You can set the message mode, or logging level on the command line using:
+# cmake --log-level=<level>
 
 # See: https://cmake.org/cmake/help/latest/command/message.html
+# See: https://cmake.org/cmake/help/latest/manual/cmake.1.html#cmdoption-cmake-log-level
+cmake_minimum_required(VERSION 3.26)
 
 message("0. Hello") # The basic message
 
@@ -27,3 +32,4 @@ message( WARNING "9. A warning line" )
 message( NOTICE "10. A notice line" )
 message( "" )
 message( FATAL_ERROR "11. This will do a stop!" )
+message( "Never runs! Nice try!")
