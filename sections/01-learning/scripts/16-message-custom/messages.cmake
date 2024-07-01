@@ -1,8 +1,17 @@
 # Cmake-easy by Codefrogs
 #
-message( "Cmake-easy by Codefrogs")
-message( "Using CMAKE_MESSAGE_CONTEXT with message()." )
-message( "" )
+# Message context example.
+#
+# Centre to message context is CMAKE_MESSAGE_CONTEXT
+# This is a list to which we can append a 'context'.
+# 
+# see: https://cmake.org/cmake/help/latest/manual/cmake.1.html#cmdoption-cmake-log-context
+# see: https://cmake.org/cmake/help/latest/variable/CMAKE_MESSAGE_CONTEXT.html#variable:CMAKE_MESSAGE_CONTEXT
+
+function(display_user user)
+  list(APPEND CMAKE_MESSAGE_CONTEXT "display_user")
+  message("User: ${user}")
+endfunction()
 
 function(display users)
   list(APPEND CMAKE_MESSAGE_CONTEXT "display")
@@ -13,10 +22,11 @@ function(display users)
   endforeach()
 endfunction()
 
-function(display_user user)
-  list(APPEND CMAKE_MESSAGE_CONTEXT "display_user")
-  message("User: ${user}")
-endfunction()
+list(APPEND CMAKE_MESSAGE_CONTEXT "root")
+
+message( "Cmake-easy by Codefrogs")
+message( "Using CMAKE_MESSAGE_CONTEXT with message()." )
+message( "" )
 
 message("Started")
 set(users "Horwell,Mellanie,32;Konran,Keith,18;Walker,Molly,28" )
