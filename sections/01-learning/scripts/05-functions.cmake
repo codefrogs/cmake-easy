@@ -8,7 +8,7 @@
 function(showTitle)
 
   message("1. showTitle CALLED! ")
-  
+  message("2. CMAKE_CURRENT_FUNCTION: ${CMAKE_CURRENT_FUNCTION}")  
   set( colour blue )  # local variable
   set( font 14 )      # local variable
 
