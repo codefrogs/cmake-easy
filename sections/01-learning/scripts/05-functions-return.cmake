@@ -51,7 +51,7 @@ message( "4: User name: ${animal}")
 # Passing a parameters, and getting a return value.
 function( get_planet index name )
   set(planets "Mercury;Venus;Earth;Mars;Jupiter;Saturn;Uranus;Neptune;Pluto;PlanetX")
-  list(GET planets ${index} planet)
+  list(GET planets ${index} planet) # Get the planet at index 'index'.
   set(${name} ${planet} PARENT_SCOPE ) # var here is local
 endfunction()
 
@@ -70,9 +70,9 @@ message( "6: Flight BA734 - Speed: ${speed}")
 
 # ----------------------------------
 # Returning two values
-function( get_mp3_filenames file file2)
-	set(${file} "sine.mp3" PARENT_SCOPE)
-	set(${file2} "saw.mp3" PARENT_SCOPE)
+function( get_mp3_filenames file1 file2)
+  set(${file1} "sine.mp3" PARENT_SCOPE)
+  set(${file2} "saw.mp3" PARENT_SCOPE)
 endfunction()
 
 get_mp3_filenames(f1 f2)
