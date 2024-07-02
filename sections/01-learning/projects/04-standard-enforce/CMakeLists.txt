@@ -8,3 +8,6 @@ set(CMAKE_CXX_STANDARD 20) # We want the C++20 standard
 set(CMAKE_CXX_STANDARD_REQUIRED ON) # Enforce the standard!
 
 add_executable(enforce main.cpp)
+
+# Try it out: 
+# Increase the C++ verion number to test version enforcement.
