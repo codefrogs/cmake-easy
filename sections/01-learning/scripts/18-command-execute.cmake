@@ -5,6 +5,7 @@
 # see: https://cmake.org/cmake/help/latest/command/execute_process.html
 
 # Setting a variable to hold the command
+cmake_minimum_required(VERSION 3.29)
 set(who_am_i_cmd "whoami")
 
 message("Running 'whoami' command:")

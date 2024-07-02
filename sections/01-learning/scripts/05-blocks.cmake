@@ -5,6 +5,7 @@
 # Here we define a block. If you know C++, you can think
 # of these as your curly-bracket equivalent!
 # Easy right!?
+cmake_minimum_required(VERSION 3.29)
 
 set(moon Io)
 set(colour orange)

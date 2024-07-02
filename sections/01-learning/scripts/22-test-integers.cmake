@@ -12,6 +12,7 @@ Run: cmake -P CMakeLists.txt
 # -NOT <comparision>
 # -LESS_EQUAL (less or equal to)
 # -GREATER_EQUAL (greater or equal to)
+cmake_minimum_required(VERSION 3.29)
 
 set(level 12)
 if ( ${level} GREATER 8) 

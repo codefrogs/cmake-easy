@@ -4,6 +4,7 @@ cmake-easy by Codefrogs
 Run: cmake -P CMakeLists.txt
 
 #]=]
+cmake_minimum_required(VERSION 3.29)
 
 set(location "London")
 

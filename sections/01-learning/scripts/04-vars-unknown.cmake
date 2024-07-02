@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.29)
 message("cmake-easy by Codefrogs: unknown variables")
 message("")
 set(file "route.txt")

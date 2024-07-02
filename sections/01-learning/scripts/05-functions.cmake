@@ -4,6 +4,7 @@
 
 # Here we define a function called 'showTitle'
 # Easy!
+cmake_minimum_required(VERSION 3.29)
 
 function(showTitle)
 

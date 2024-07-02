@@ -15,6 +15,7 @@
 # For the complete list of file operators, see:
 # https://cmake.org/cmake/help/latest/command/if.html#file-operations
 #
+cmake_minimum_required(VERSION 3.29)
 
 set(script_name ${CMAKE_ARGV2})
 

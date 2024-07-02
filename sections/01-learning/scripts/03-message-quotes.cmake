@@ -1,7 +1,7 @@
-#/bin/cmake -P
 # Cmake-easy by Codefrogs
 #
 # Using message() with double quotes
+cmake_minimum_required(VERSION 3.29)
 
 message("1. This is a simple message")
 message("2. But we can add other characters like tab \t here \t and there.")

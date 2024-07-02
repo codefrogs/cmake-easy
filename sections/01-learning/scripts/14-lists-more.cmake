@@ -5,7 +5,7 @@
 # make much use of lists.
 
 # see: https://cmake.org/cmake/help/v3.22/command/list.html
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 3.29)
 
 message( "Cmake-easy by Codefrogs")
 message( "Array/List examples" )

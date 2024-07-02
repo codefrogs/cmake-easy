@@ -11,6 +11,7 @@
 # -VERSION_LESS_EQUAL
 # -VERSION_GREATER
 # -VERSION_GREATER_EQUAL
+cmake_minimum_required(VERSION 3.29)
 
 message("cmake-easy by Codefrogs")
 message("Version number comparisions")

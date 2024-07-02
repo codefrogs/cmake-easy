@@ -1,5 +1,3 @@
-#!/bin/cmake -P
-
 # Shows how to use message()
 # You can set the message mode, or logging level on the command line using:
 # cmake --log-level=<level>

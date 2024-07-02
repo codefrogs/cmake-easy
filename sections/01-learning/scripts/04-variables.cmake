@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.29)
+
 # How to set a variable
 
 # Creates the variable NAME

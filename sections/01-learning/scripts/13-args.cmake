@@ -4,7 +4,7 @@
 # You can do this by using this format:
 # <cmake script name>.cmake <arg1> <arg2> <arg3> ... 
 # e.g. ./13-args.cmake toyota honda suzuki lexus
-
+cmake_minimum_required(VERSION 3.29)
 message( "CMake-easy by Codefrogs")
 
 # The parameter count is zero, if no arguments are given.

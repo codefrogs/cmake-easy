@@ -1,7 +1,10 @@
 #[=[
 cmake-easy by Codefrogs
 
+Show if-else statement example.
+
 #]=]
+cmake_minimum_required(VERSION 3.29)
 
 set(location "London")
 

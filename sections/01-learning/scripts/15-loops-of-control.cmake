@@ -7,6 +7,7 @@
 # - return
 # - exit
 # See: https://cmake.org/cmake/help/latest/command/foreach.html
+cmake_minimum_required(VERSION 3.29)
 
 message( "CMake-easy by Codefrogs")
 message( "")

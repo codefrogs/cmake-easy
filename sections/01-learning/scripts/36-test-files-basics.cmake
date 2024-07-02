@@ -3,6 +3,7 @@
 #
 # Lets explore file testing.
 #
+cmake_minimum_required(VERSION 3.29)
 message( "Cmake-easy by Codefrogs")
 message( "" )
 

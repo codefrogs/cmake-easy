@@ -9,6 +9,7 @@ Each item is separated by a semi-colon.
 
 See: https://cmake.org/cmake/help/latest/command/list.html
 #]=]
+cmake_minimum_required(VERSION 3.29)
 
 set( users Tom Carol Dave Ross Stephanie )
 

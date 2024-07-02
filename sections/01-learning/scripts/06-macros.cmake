@@ -1,8 +1,8 @@
 # How to create a function
 # Run this script with cmake -P CMakeLists.txt
 #
-
 # Show use of 'macro'.
+cmake_minimum_required(VERSION 3.29)
 
 include(sleep.cmake) # Ignore me for now
 

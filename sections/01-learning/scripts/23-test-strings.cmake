@@ -12,6 +12,7 @@
 # -STREQUAL (equal)
 # -STRLESS_EQUAL (less or equal to)
 # -STRGREATER_EQUAL (greater or equal to)
+cmake_minimum_required(VERSION 3.29)
 
 message("cmake-easy by Codefrogs")
 message("String comparisions")

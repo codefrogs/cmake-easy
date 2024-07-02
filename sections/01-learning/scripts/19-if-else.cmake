@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.26)
+cmake_minimum_required(VERSION 3.29)
 set(wont_get_here "X: Should not get here!") # For non-messages.
 
 message("cmake-easy by Codefrogs")

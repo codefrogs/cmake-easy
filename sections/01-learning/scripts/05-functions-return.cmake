@@ -1,7 +1,7 @@
 #!/bin/cmake -P
 # Cmake-easy by Codefrogs
 #
-cmake_minimum_required( VERSION 3.25)
+cmake_minimum_required(VERSION 3.29)
 message( "Cmake-easy by Codefrogs")
 message( "Passing parameters, and returning values." )
 
