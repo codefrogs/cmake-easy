@@ -4,6 +4,8 @@
 # This will only work on Linux systems.
 # When in a project, you may want to check the OS by using CMAKE_SYSTEM_NAME.
 # But hopefully you will find a way to not use OS specfic commands!
+# For exammple using cmake's platform agnostic commands.
+# These are available via the command line, ie. 'cmake -E <command>'.
 #
 # see: https://cmake.org/cmake/help/latest/command/execute_process.html
 # see: https://cmake.org/cmake/help/latest/variable/CMAKE_SYSTEM_NAME.html#cmake-system-name
