@@ -3,8 +3,10 @@
 
 class Minor
 {
-  public:
-  void run();
+public:
+  ~Minor() = default;
+
+  virtual void run(const int indent);
 };
 
 #endif // MINOR_H

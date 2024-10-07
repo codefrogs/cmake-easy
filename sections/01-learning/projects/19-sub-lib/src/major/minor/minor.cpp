@@ -1,10 +1,12 @@
 #include "minor.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-void Minor::run()
+void Minor::run(const int indent)
 {
-  cout << "Running minor." << endl ;
+  string space(indent, ' ');
+  cout << space << "Minor: run() CALLED" << endl;
+  cout << space << "Minor: run() FINISHED" << endl;
 }
-

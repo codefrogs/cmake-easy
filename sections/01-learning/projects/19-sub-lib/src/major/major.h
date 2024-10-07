@@ -2,10 +2,11 @@
 #define MAJOR_H
 #include "minor.h"
 
-class Major
+class Major : public Minor
 {
-  public:
-  void run();
+public:
+  ~Major() = default;
+  virtual void run(const int indent);
 };
 
 #endif // MAJOR_H
